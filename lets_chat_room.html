@@ -35,7 +35,7 @@
 		};
 	  
 		// Initialize Firebase
-		const app = initializeApp(firebaseConfig);
+		firebase.initializeApp(firebaseConfig);
 	  </script>
 <div class="container">
 <button id="logout" onclick="logout();" class="glyphicon glyphicon-log-out btn btn-danger">Logout</button>
@@ -46,7 +46,7 @@
 				<img src="Notification Logo.png">
 			</sup>
 		</h1>
-		<h3 id="username" class="color_white"></h3>
+		<h3 id="user_name" class="color_white"></h3>
 		<div class="form-group input_div_room_page">
 			<label>#Add Room:</label>
             <input type="text" id="room_name" class="form-control" placeholder="#Room Name">
